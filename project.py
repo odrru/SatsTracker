@@ -243,8 +243,8 @@ def convert(balance):
         else:
             try:
                 SATS_TO_USD = 1 / 100000000
-                btc_api = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd"
-                currency_api = "https://openexchangerates.org/api/latest.json?app_id=018012ca48e745fd8ed078e1db51a329"
+                btc_api = "insert api here"
+                currency_api = "insert api here"
                 bitcoin_exchange_data = (requests.get(btc_api)).json()
                 local_currency_exchange_data = (requests.get(currency_api)).json()
                 bitcoin_sats_price = (
